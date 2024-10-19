@@ -34,6 +34,5 @@ function cleanGrid(){
 createGridBtn.addEventListener("click", () => {
     const gridSize = document.querySelector('input').value;
     grid.innerHTML = '';
-    console.log(gridSize);
     setupGrid(gridSize);
 });

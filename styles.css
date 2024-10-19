@@ -23,7 +23,7 @@ h1{
 
 button,
 input{
-    width: 100%;
+    width: 90%;
     border: none;
     outline: none;
     padding: 10px 20px;
@@ -51,7 +51,10 @@ main{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    width: 200px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(33, 46, 75);
+    padding: 30px;
 }
 
 
