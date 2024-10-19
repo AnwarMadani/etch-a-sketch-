@@ -27,13 +27,12 @@ clearBtn.addEventListener("click", cleanGrid);
 function cleanGrid(){
     let divs = document.querySelectorAll('.grid-element');
 
-    let divsArray = [...divs];
-    divsArray.forEach((div) => {
+    divs.forEach((div) => {
         div.style["background-color"] = '';
     })
 }
 
 createGridBtn.addEventListener("click", () => {
+    grid.innerHTML = '';
     setupGrid(gridSize);
-    cleanGrid();
 });
