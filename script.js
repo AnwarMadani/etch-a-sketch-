@@ -1,4 +1,5 @@
 const grid = document.querySelector('.container');
+const clearBtn = document.querySelector('.clearBtn');
 
 setupGrid(16);
 
@@ -17,4 +18,15 @@ function setupGrid(size){
 
 function changeColor(element){
     element.style["background-color"] = 'black';
+}
+
+clearBtn.addEventListener("click", cleanGrid);
+
+function cleanGrid(){
+    let divs = document.querySelectorAll('.grid-element');
+
+    let divsArray = [...divs];
+    divsArray.forEach((div) => {
+        div.style["background-color"] = '';
+    })
 }
