@@ -1,7 +1,6 @@
 const grid = document.querySelector('.container');
 const clearBtn = document.querySelector('.clearBtn');
 const createGridBtn = document.querySelector('.create-grid');
-const gridSize = document.querySelector('input').value;
 
 setupGrid(16);
 
@@ -33,6 +32,8 @@ function cleanGrid(){
 }
 
 createGridBtn.addEventListener("click", () => {
+    const gridSize = document.querySelector('input').value;
     grid.innerHTML = '';
+    console.log(gridSize);
     setupGrid(gridSize);
 });
