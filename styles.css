@@ -43,6 +43,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .settings{
@@ -67,4 +68,9 @@ main{
 
 .grid-element{
     border: 1px solid grey;
+}
+
+button.active {
+    background-color: #333;
+    color: #ededed;
 }
